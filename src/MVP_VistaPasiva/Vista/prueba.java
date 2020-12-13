@@ -1,4 +1,4 @@
-package Vista;
+package MVP_VistaPasiva.Vista;
 
 import javax.swing.*;
 
@@ -9,5 +9,7 @@ public class prueba {
         frame.setContentPane(vistaTermometro.getPanelMain());
         frame.pack();
         frame.setVisible(true);
+        frame.setSize(350,475);
+        frame.setLocationRelativeTo(null);
     }
 }

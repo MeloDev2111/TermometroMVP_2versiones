@@ -1,8 +1,6 @@
-package Vista;
+package MVP_VistaPasiva.Vista;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class VTermometroSwing {
     private JButton btnMenosTemp;
