@@ -12,6 +12,14 @@ public class VTermometroSwing {
     private JPanel panelMain;
     private JTextField lblTemperatura;
 
+    public void mostrar(){
+        JFrame frame = new JFrame("TermometroMVP");
+        frame.setContentPane(this.getPanelMain());
+        frame.pack();
+        frame.setVisible(true);
+        frame.setSize(350,475);
+        frame.setLocationRelativeTo(null);
+    }
 
     //getters and setters
 

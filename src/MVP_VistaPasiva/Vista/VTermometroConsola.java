@@ -1,30 +1,36 @@
 package MVP_VistaPasiva.Vista;
 
-import MVP_VistaPasiva.Modelo.Mtemperatura;
+
+import MVP_VistaPasiva.Modelo.Unidades;
+import MVP_VistaPasiva.Presentador.Presentador;
+
+import javax.swing.*;
+
 
 public class VTermometroConsola {
+    private Presentador presenter;
+    private Validacion validar = new Validacion();
 
-    private Mtemperatura mtemperatura;
-
-    public VTermometroConsola(Mtemperatura mtemperatura){
-        this.mtemperatura = mtemperatura;
+    public void setPresenter(Presentador p){
+        presenter=p;
     }
 
-    public void mostrarIngreso(){
-        //Validacion validacion = new Validacion();
-        //System.out.println("Ingrese Unidad del Valor Entrante: ");
-        //System.out.println("Celsius (C) - Farenheit(F) - Kelvin(K)");
-        //mtemperatura.setUnidadEntrada(validacion.inUnidad());
-        //System.out.println("Ingrese el valor Entrante: ");
-        //mtemperatura.setValorEntrada(validacion.inDouble());
-        //System.out.println("Ingrese Unidad a convertir: ");
-        //System.out.println("ACelsius (C)-A Farenheit(F)-A Kelvin(K)");
-        //mtemperatura.setUnidadResultado(validacion.inUnidad());
+    public void mostrar(){
     }
-    public void mostrarSalida(){
-        System.out.println("El resultado es:"
-                +mtemperatura.getValorResultado()
-                +" "+mtemperatura.getUnidadResultado());
+
+    public double getValorTemperatura(){
+        System.out.println("Ingrese Valor Temperatura");
+        return validar.inDouble();
+    }
+
+    public Unidades getUnidadTemperatura(){
+        System.out.println("Ingrese Unidad Temperatura");
+        return validar.inUnidad();
+    }
+
+    public void convertir(){
+        System.out.println("El resultado de la conversión es:");
+        presenter.conversion();
     }
 
 }
