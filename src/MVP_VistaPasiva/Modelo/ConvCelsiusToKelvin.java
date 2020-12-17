@@ -1,10 +1,10 @@
 package MVP_VistaPasiva.Modelo;
 
-public class ConvCelsiusToFahrenheit implements LogicaServicio{
+public class ConvCelsiusToKelvin implements LogicaServicio {
 
     @Override
     public Mtemperatura convertir(Mtemperatura MTemp) {
-        MTemp.setValorResultado(MTemp.getValorEntrada()*(1.8) + 32);
+        MTemp.setValorResultado(MTemp.getValorEntrada()+273.15);
         return MTemp;
     }
 }

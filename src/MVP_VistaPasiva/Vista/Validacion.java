@@ -20,6 +20,19 @@ public class Validacion {
         }while (!valido);
         return entrada;
     }
+    public int inInt(){
+        int entrada = 0;
+        boolean valido = false;
+        do {
+            try {
+                entrada = in.nextInt();
+                valido = true;
+            }catch (Exception e){
+                this.mostrarError("Entero");
+            }
+        }while (!valido);
+        return entrada;
+    }
 
     public Unidades inUnidad(){
         Unidades unidad = null;
@@ -28,20 +41,15 @@ public class Validacion {
             String entrada = in.next();
             if (entrada.length() != 1) {
                 this.mostrarError("caracter");
-            }
-            else {
-                switch (entrada.charAt(0)) {
-                    case 'F':
-                        unidad = Unidades.FAHRENHEIT;
-                        break;
-                    case 'C':
-                        unidad = Unidades.CELSIUS;
-                        break;
-                    case 'K':
-                        unidad = Unidades.KELVIN;
-                        break;
-                    default:
-                        this.mostrarError("F o C o K");
+            }else {
+                for (Unidades u:Unidades.values()) {
+                    if (u.getCaracter()==entrada.charAt(0)){
+                        unidad = u;
+                    }
+                }
+
+                if (unidad==null) {
+                    this.mostrarError("F o C o K");
                 }
             }
 

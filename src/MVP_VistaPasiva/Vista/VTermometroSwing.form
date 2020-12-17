@@ -63,6 +63,8 @@
             </constraints>
             <properties>
               <background color="-15512934"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
               <font size="16"/>
               <foreground color="-131585"/>
               <hideActionText value="false"/>
@@ -75,6 +77,8 @@
             </constraints>
             <properties>
               <background color="-4453632"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
               <font size="16"/>
               <foreground color="-131075"/>
               <text value="Más Caliente"/>
@@ -100,6 +104,7 @@
               <background color="-12828357"/>
               <font size="16" style="1"/>
               <foreground color="-131585"/>
+              <selected value="false"/>
               <text value="Celsius"/>
             </properties>
           </component>
@@ -111,6 +116,7 @@
               <background color="-12828357"/>
               <font size="16" style="1"/>
               <foreground color="-131585"/>
+              <selected value="false"/>
               <text value="Kelvin"/>
             </properties>
           </component>
@@ -122,6 +128,7 @@
               <background color="-12828357"/>
               <font size="16" style="1"/>
               <foreground color="-131585"/>
+              <selected value="false"/>
               <text value="Fahrenheit"/>
             </properties>
           </component>
@@ -156,4 +163,12 @@
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="UnidadesTemperatura">
+      <member id="a8f51"/>
+      <member id="a8f51"/>
+      <member id="6306b"/>
+      <member id="ceb26"/>
+    </group>
+  </buttonGroups>
 </form>

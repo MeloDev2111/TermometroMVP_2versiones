@@ -4,9 +4,9 @@ import MVP_VistaPasiva.Modelo.Unidades;
 import MVP_VistaPasiva.Presentador.Presentador;
 
 public interface IVTermometro {
-    public void setPresenter(Presentador p);
-    public void mostrar();
+    public void setPresentador(Presentador p);
+    public void iniciar();
     public double getValorTemperatura();
     public Unidades getUnidadTemperatura();
-    public void convertir();
+    public void setSalida(String valorResultante);
 }
