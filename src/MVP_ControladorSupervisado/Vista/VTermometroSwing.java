@@ -1,13 +1,13 @@
-package MVP_VistaPasiva.Vista;
+package MVP_ControladorSupervisado.Vista;
 
-import MVP_VistaPasiva.Modelo.Unidades;
-import MVP_VistaPasiva.Presentador.Presentador;
+import MVP_ControladorSupervisado.Modelo.Unidades;
+import MVP_ControladorSupervisado.Presentador.Presentador;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class VTermometroSwing implements IVTermometro{
+public class VTermometroSwing implements IVTermometro {
     private JButton btnMenosTemp;
     private JButton btnMasTemp;
     private JRadioButton radioCelsius;
@@ -20,17 +20,18 @@ public class VTermometroSwing implements IVTermometro{
     private Presentador presenter;
 
     private void setListeners() {
+
         btnMenosTemp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                presenter.disminuirTemperatura();
+                presenter.disminuirTemperatura(e);
                 presenter.getvaloresIniciales();
             }
         });
         btnMasTemp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                presenter.aumentarTemperatura();
+                presenter.aumentarTemperatura(e);
                 presenter.getvaloresIniciales();
             }
         });
@@ -38,7 +39,7 @@ public class VTermometroSwing implements IVTermometro{
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                presenter.convertir();
+                presenter.convertir(e);
                 presenter.getvaloresIniciales();
             }
         };

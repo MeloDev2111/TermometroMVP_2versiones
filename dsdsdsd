@@ -1,0 +1,35 @@
+[33mcommit 6c7e8ebb7b6d28b2b92bf5304e48fd69bb8e8339[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: MeloDev <melodiaz2111@gmail.com>
+Date:   Thu Dec 17 01:20:36 2020 -0500
+
+    MVP_VistaPasiva Terminada
+
+[33mcommit d85e0108c40e9e6522cd4a20c9da0a22e3358da7[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: MelioDev <melodiaz2111@gmail.com>
+Date:   Wed Dec 16 12:13:20 2020 -0500
+
+    Vista Consola en proceso
+
+[33mcommit 6c52f051518647d1d0bc4cfb7a8943f22a95b978[m
+Author: MeloDev <melodiaz2111@gmail.com>
+Date:   Sun Dec 13 20:33:48 2020 -0500
+
+    Modelo SemiImpl
+
+[33mcommit 2b3ae3671c80e7cead5fb23f29e3b649105aa6f2[m
+Author: MeloDev <melodiaz2111@gmail.com>
+Date:   Sun Dec 13 18:20:28 2020 -0500
+
+    VistaSwing diseño terminado, Capa de Modelo estructurando
+
+[33mcommit b30ead33c3d3010c29e28f8de5bde4ac4517bbc0[m
+Author: MeloDev <melodiaz2111@gmail.com>
+Date:   Sat Dec 12 21:37:05 2020 -0500
+
+    Vista Swing creada
+
+[33mcommit 6dac716ad7c042d12f227971e872a4b75e159fac[m
+Author: MeloDev <melodiaz2111@gmail.com>
+Date:   Sat Dec 12 19:32:22 2020 -0500
+
+    Inicio IntelliJ

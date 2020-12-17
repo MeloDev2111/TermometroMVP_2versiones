@@ -1,4 +1,4 @@
-package MVP_VistaPasiva.Modelo;
+package MVP_ControladorSupervisado.Modelo;
 
 public enum Unidades {
         CELSIUS('C'), FAHRENHEIT('F'), KELVIN('K');
