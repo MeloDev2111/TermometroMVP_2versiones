@@ -7,5 +7,4 @@ public class ConvKelvinToCelsius implements LogicaServicio {
         MTemp.setValorResultado((MTemp.getValorEntrada()-273.15));
         return MTemp;
     }
-    
 }

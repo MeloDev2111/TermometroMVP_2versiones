@@ -8,5 +8,5 @@ public interface IVTermometro {
     public void iniciar();
     public double getValorTemperatura();
     public Unidades getUnidadTemperatura();
-    public void setSalida(String valorResultante);
+    public void setSalida(String valorResultante, String unidadResultado);
 }

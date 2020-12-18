@@ -12,26 +12,30 @@ public class Presentador {
     public Presentador(IVTermometro vista, Mtemperatura mtemperatura) {
         this.vista = vista;
         this.mtemperatura = mtemperatura;
+
     }
 
     public void convertir(ActionEvent e){
         mtemperatura.setUnidadResultado(vista.getUnidadTemperatura());
         ejecutarLogica();
-        vista.setSalida(String.valueOf(mtemperatura.getValorResultado()));
+        vista.setSalida(String.valueOf(mtemperatura.getValorResultado()),
+                        mtemperatura.getUnidadResultado().toString());
     }
 
     public void aumentarTemperatura(ActionEvent e){
         ConvSameToSame logica = logica = new ConvSameToSame();
         getvaloresIniciales();
         logica.aumentarTemperatura(mtemperatura);
-        vista.setSalida(String.valueOf(mtemperatura.getValorResultado()));
+        vista.setSalida(String.valueOf(mtemperatura.getValorResultado()),
+                        mtemperatura.getUnidadResultado().toString());
     }
     public void disminuirTemperatura(ActionEvent e){
         ConvSameToSame logica = logica = new ConvSameToSame();
         getvaloresIniciales();
         logica.disminuirTemperatura(mtemperatura);
 
-        vista.setSalida(String.valueOf(mtemperatura.getValorResultado()));
+        vista.setSalida(String.valueOf(mtemperatura.getValorResultado()),
+                        mtemperatura.getUnidadResultado().toString());
     }
 
     public void getvaloresIniciales(){

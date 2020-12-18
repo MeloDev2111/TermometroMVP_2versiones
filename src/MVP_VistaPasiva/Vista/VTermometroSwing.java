@@ -16,6 +16,7 @@ public class VTermometroSwing implements IVTermometro{
     private JLabel lblTitulo;
     private JPanel panelMain;
     private JTextField lblTemperatura;
+    private JTextField lblUnidad;
 
     private Presentador presenter;
 
@@ -58,10 +59,11 @@ public class VTermometroSwing implements IVTermometro{
         frame.setContentPane(this.getPanelMain());
         frame.pack();
         frame.setVisible(true);
-        frame.setSize(350,475);
+        frame.setSize(350,500);
         frame.setLocationRelativeTo(null);
         //VALORES POR DEFECTO
         lblTemperatura.setText("0");
+        lblUnidad.setText("CELSIUS");
         radioCelsius.setSelected(true);
         presenter.getvaloresIniciales();
         //ACTIVANDO LISTENERS
@@ -92,8 +94,9 @@ public class VTermometroSwing implements IVTermometro{
         return null;
     }
     @Override
-    public void setSalida(String valorResultante){
+    public void setSalida(String valorResultante, String unidadResultado){
         lblTemperatura.setText(valorResultante);
+        lblUnidad.setText(unidadResultado);
     }
 
     //getters and setters
@@ -160,5 +163,13 @@ public class VTermometroSwing implements IVTermometro{
 
     public void setLblTemperatura(JTextField lblTemperatura) {
         this.lblTemperatura = lblTemperatura;
+    }
+
+    public JTextField getLblUnidad() {
+        return lblUnidad;
+    }
+
+    public void setLblUnidad(JTextField lblUnidad) {
+        this.lblUnidad = lblUnidad;
     }
 }

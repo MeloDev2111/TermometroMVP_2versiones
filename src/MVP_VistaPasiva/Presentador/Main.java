@@ -10,7 +10,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         Mtemperatura Mtemperatura = new Mtemperatura();
-        IVTermometro vistaTermometro = new VTermometroSwing();
+        IVTermometro vistaTermometro = new VTermometroConsola();
         Presentador presenter = new Presentador(vistaTermometro,Mtemperatura);
 
         vistaTermometro.setPresentador(presenter);

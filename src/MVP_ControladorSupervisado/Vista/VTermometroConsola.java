@@ -59,8 +59,8 @@ public class VTermometroConsola implements IVTermometro {
     }
 
     @Override
-    public void setSalida(String valorResultante) {
-        System.out.println("El Resultado es: "+valorResultante);
+    public void setSalida(String valorResultante, String unidadResultado) {
+        System.out.println("El Resultado es: "+valorResultante+" "+unidadResultado);
     }
 
     public void menu(){

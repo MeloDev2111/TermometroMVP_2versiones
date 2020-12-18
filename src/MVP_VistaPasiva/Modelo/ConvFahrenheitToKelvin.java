@@ -7,5 +7,4 @@ public class ConvFahrenheitToKelvin implements LogicaServicio {
         MTemp.setValorResultado(((MTemp.getValorEntrada()-32)*5/9)+273.15);
         return MTemp;
     }
-    
 }

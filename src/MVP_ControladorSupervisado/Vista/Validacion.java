@@ -11,11 +11,12 @@ public class Validacion {
         double entrada = 0.0;
         boolean valido = false;
         do {
+            in = new Scanner(System.in);//MODI
             try {
                 entrada = in.nextDouble();
                 valido = true;
             }catch (Exception e){
-                this.mostrarError("Real");
+                this.mostrarError("Double");
             }
         }while (!valido);
         return entrada;
@@ -24,6 +25,7 @@ public class Validacion {
         int entrada = 0;
         boolean valido = false;
         do {
+            in = new Scanner(System.in);//MODI
             try {
                 entrada = in.nextInt();
                 valido = true;
